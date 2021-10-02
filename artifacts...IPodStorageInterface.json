@@ -1,0 +1,1185 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"görli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"deployedBytecode": {
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"gasEstimates": null,
+		"methodIdentifiers": {
+			"addAmountInTotalStake(uint256,uint256)": "2feb6192",
+			"addNewBetId(uint256,address)": "04d70aa2",
+			"addNewBetIdForStaker(uint256,address)": "1d079a8b",
+			"burnInterestNft(uint256,address)": "7fef25a1",
+			"burnNft(uint256,address)": "09bcb8d6",
+			"decreaseStakerCount(uint256)": "925bb6e0",
+			"getBetIDForNFT(uint256)": "98faa820",
+			"getBetIdArrayOfManager(address)": "884ace87",
+			"getBetIdArrayOfStaker(address)": "5187d2a6",
+			"getBetIdManager(uint256)": "25025460",
+			"getBetTokens(uint256)": "442f98af",
+			"getInterest(uint256)": "5fe2d689",
+			"getInterestNftDetail(uint256,address)": "4cc895c7",
+			"getLengthOfBetIds(address)": "f4f91d41",
+			"getLengthOfStakerBetIds(address)": "893fcfb2",
+			"getLengthOfStakersARray(uint256)": "9ec71aec",
+			"getMinimumContribution(uint256)": "0c507415",
+			"getMultipleWinnerAddress(uint256)": "74039bfa",
+			"getNftDetail(uint256,address)": "34a61430",
+			"getPodName(uint256)": "2076997f",
+			"getRedeemFlagStakerOnBet(uint256,address)": "aa4f2926",
+			"getRunningPodBetId()": "a6c5f06f",
+			"getSingleWinnerAddress(uint256)": "18314615",
+			"getStakeCount(uint256)": "02cca71f",
+			"getStakeforBet(uint256,address)": "a13ec5cf",
+			"getStakersArrayForBet(uint256)": "968a1d71",
+			"getTimestamp(uint256)": "b633620c",
+			"getTotalStakeFromBet(uint256)": "53f8eb9c",
+			"getTotalWinner(uint256)": "ab52a018",
+			"getTotalWinning(address)": "c1a9ad8c",
+			"getWinnerAddressByIndex(uint256,uint256)": "4390e256",
+			"getWinnerDeclare(uint256)": "a85d0b74",
+			"getYieldMechanism(uint256)": "f4fd163f",
+			"increaseStakerCount(uint256)": "e9e7e5b5",
+			"isInterestNFT(uint256)": "4ea2c089",
+			"isSingleOrMultipleWinner(uint256)": "96cb0748",
+			"mintInterestNft(uint256,uint256,uint256,address)": "fe067e77",
+			"mintNft(uint256,uint256,address)": "cdda7457",
+			"setBetIDManager(uint256,address)": "f5eb9000",
+			"setBetIDOnConstructor(uint256,uint256,uint256,string)": "b5091da0",
+			"setBetTokens(uint256,address,address)": "f1db5735",
+			"setInterest(uint256,uint256)": "43201b71",
+			"setMultipleWinnerAddress(uint256,uint256[])": "e746b264",
+			"setNewStakerForBet(uint256,address)": "227736a3",
+			"setRedeemFlagStakerOnBet(uint256,address)": "c5cd4894",
+			"setRevertRedeemFlagStakerOnBet(uint256,address)": "32285ce1",
+			"setRunningPodBetId(uint256)": "546b6b22",
+			"setSingleWinnerAddress(uint256,uint256)": "42485365",
+			"setStakeforBet(uint256,uint256,address)": "2b87dd8e",
+			"setTimestamp(uint256,uint256)": "d160c7a9",
+			"setTotalWinner(uint256,uint256)": "c1c23561",
+			"setTotalWinning(address,uint256)": "178d449e",
+			"setWinnerDeclare(uint256)": "f39b5b14",
+			"setWinnerNumbers(uint256,uint256)": "dea7b9db",
+			"subtractAmountInTotalStake(uint256,uint256)": "52e1a75a"
+		}
+	},
+	"abi": [
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "amount",
+					"type": "uint256"
+				}
+			],
+			"name": "addAmountInTotalStake",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "manager",
+					"type": "address"
+				}
+			],
+			"name": "addNewBetId",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "staker",
+					"type": "address"
+				}
+			],
+			"name": "addNewBetIdForStaker",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "staker",
+					"type": "address"
+				}
+			],
+			"name": "burnInterestNft",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "staker",
+					"type": "address"
+				}
+			],
+			"name": "burnNft",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "decreaseStakerCount",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "tokenId",
+					"type": "uint256"
+				}
+			],
+			"name": "getBetIDForNFT",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "manager",
+					"type": "address"
+				}
+			],
+			"name": "getBetIdArrayOfManager",
+			"outputs": [
+				{
+					"internalType": "uint256[]",
+					"name": "",
+					"type": "uint256[]"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "staker",
+					"type": "address"
+				}
+			],
+			"name": "getBetIdArrayOfStaker",
+			"outputs": [
+				{
+					"internalType": "uint256[]",
+					"name": "",
+					"type": "uint256[]"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "getBetIdManager",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "getBetTokens",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "getInterest",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "staker",
+					"type": "address"
+				}
+			],
+			"name": "getInterestNftDetail",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "manager",
+					"type": "address"
+				}
+			],
+			"name": "getLengthOfBetIds",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "staker",
+					"type": "address"
+				}
+			],
+			"name": "getLengthOfStakerBetIds",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "getLengthOfStakersARray",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "getMinimumContribution",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "getMultipleWinnerAddress",
+			"outputs": [
+				{
+					"internalType": "uint256[]",
+					"name": "",
+					"type": "uint256[]"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "staker",
+					"type": "address"
+				}
+			],
+			"name": "getNftDetail",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "getPodName",
+			"outputs": [
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "staker",
+					"type": "address"
+				}
+			],
+			"name": "getRedeemFlagStakerOnBet",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "getRunningPodBetId",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "getSingleWinnerAddress",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "getStakeCount",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "staker",
+					"type": "address"
+				}
+			],
+			"name": "getStakeforBet",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "getStakersArrayForBet",
+			"outputs": [
+				{
+					"internalType": "address[]",
+					"name": "",
+					"type": "address[]"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "getTimestamp",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "getTotalStakeFromBet",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "getTotalWinner",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_staker",
+					"type": "address"
+				}
+			],
+			"name": "getTotalWinning",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_index",
+					"type": "uint256"
+				}
+			],
+			"name": "getWinnerAddressByIndex",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "getWinnerDeclare",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "getYieldMechanism",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "increaseStakerCount",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "tokenId",
+					"type": "uint256"
+				}
+			],
+			"name": "isInterestNFT",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "isSingleOrMultipleWinner",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "price",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "tokenId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "staker",
+					"type": "address"
+				}
+			],
+			"name": "mintInterestNft",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "price",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "staker",
+					"type": "address"
+				}
+			],
+			"name": "mintNft",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "manager",
+					"type": "address"
+				}
+			],
+			"name": "setBetIDManager",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "minimumContribution",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_yieldMechanism",
+					"type": "uint256"
+				},
+				{
+					"internalType": "string",
+					"name": "betName",
+					"type": "string"
+				}
+			],
+			"name": "setBetIDOnConstructor",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_tokenAddress",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_aaveToken",
+					"type": "address"
+				}
+			],
+			"name": "setBetTokens",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "interest",
+					"type": "uint256"
+				}
+			],
+			"name": "setInterest",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256[]",
+					"name": "winnerIndexes",
+					"type": "uint256[]"
+				}
+			],
+			"name": "setMultipleWinnerAddress",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "staker",
+					"type": "address"
+				}
+			],
+			"name": "setNewStakerForBet",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "staker",
+					"type": "address"
+				}
+			],
+			"name": "setRedeemFlagStakerOnBet",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "staker",
+					"type": "address"
+				}
+			],
+			"name": "setRevertRedeemFlagStakerOnBet",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "setRunningPodBetId",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "winnerIndex",
+					"type": "uint256"
+				}
+			],
+			"name": "setSingleWinnerAddress",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "amount",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "staker",
+					"type": "address"
+				}
+			],
+			"name": "setStakeforBet",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "timestamp",
+					"type": "uint256"
+				}
+			],
+			"name": "setTimestamp",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "totalWinner",
+					"type": "uint256"
+				}
+			],
+			"name": "setTotalWinner",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_staker",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_winningAmount",
+					"type": "uint256"
+				}
+			],
+			"name": "setTotalWinning",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				}
+			],
+			"name": "setWinnerDeclare",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "winnigNumber",
+					"type": "uint256"
+				}
+			],
+			"name": "setWinnerNumbers",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "betId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "amount",
+					"type": "uint256"
+				}
+			],
+			"name": "subtractAmountInTotalStake",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		}
+	]
+}

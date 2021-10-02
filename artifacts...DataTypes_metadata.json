@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "This is the Aave V2 DataTypes library.",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"DataTypes.sol": "DataTypes"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"DataTypes.sol": {
+			"keccak256": "0x8247e1d41f1989062250937841f2da8dc925ab5b5dfbcb6858ad8fa28a1c80a3",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://876d2db9738162b312d6a8fa3cfc785433208d958be8b13af428999e923514d2",
+				"dweb:/ipfs/QmYes9MkcjmTgyFbeaZnM1hAzCErBBnJr1TbcZCKMBoUnh"
+			]
+		}
+	},
+	"version": 1
+}
