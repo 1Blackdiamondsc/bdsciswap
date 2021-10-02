@@ -1,0 +1,56 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "The mapping uses int16 for keys since ticks are represented as int24 and there are 256 (2^8) values per word.",
+			"kind": "dev",
+			"methods": {},
+			"title": "Packed tick initialized state library",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Stores a packed mapping of tick index to its initialized state",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TickBitmap.sol": "TickBitmap"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BitMath.sol": {
+			"keccak256": "0x82e425066110aac05ed8a9fc90f9ee85142b6f434769447e49d4438a8d9fcd82",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://77a97078bc992c18c59cb61e07fa4632c8a26b6babf00f3b16eabb5dcaa953b4",
+				"dweb:/ipfs/QmTj15ufLWk6AxedSVXBcLp5cYf2DCJAeDi94cVemCkm54"
+			]
+		},
+		"TickBitmap.sol": {
+			"keccak256": "0x2035bacd76333baa4ef2bbd6423561638e1b7e97cb19be5b4d61feeea3340364",
+			"license": "BUSL-1.1",
+			"urls": [
+				"bzz-raw://55da2e8d44c094b9aa1a40577f9ff32605516ae45ad54e799ec9d570d007a206",
+				"dweb:/ipfs/QmakgjThKgfBTaj6Vvf54oKkxeHqgxKFmyiVbcjstsGDBF"
+			]
+		}
+	},
+	"version": 1
+}

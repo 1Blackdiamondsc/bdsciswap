@@ -1,0 +1,79 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"title": "Tick",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Contains functions for managing tick processes and relevant calculations",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Tick.sol": "Tick"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LiquidityMath.sol": {
+			"keccak256": "0xd53041349718d5bce4a89e87cd911879d41ba42ba3fab0614e5e8b742f352b88",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://ea7529b99ab4fc1d3e6c5a31990fb688f0a2d6cc302c0419e0cf5a2d6c563781",
+				"dweb:/ipfs/QmVaphRSNpfChHZKzutQ9WprwCo2WE1euvThRfHcwsnHhj"
+			]
+		},
+		"LowGasSafeMath.sol": {
+			"keccak256": "0x86715eb960f18e01ac94e3bba4614ed51a887fa3c5bd1c43bf80aa98e019cf2d",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://bfc1d5d58e59015086b0e65a6c3a2ddad312e2350480510f6c0c8167f3d71a37",
+				"dweb:/ipfs/QmQndULYjFsHKHjMAKLMfc12vWbVB5FawtioHtvwcWRJZp"
+			]
+		},
+		"SafeCast.sol": {
+			"keccak256": "0x4c12bf820c0b011f5490a209960ca34dd8af34660ef9e01de0438393d15e3fd8",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://fed11489e218e55d087d42b4f350a30e10cd2aedec8f432bd3cc712f648d5869",
+				"dweb:/ipfs/QmWfRnRxyXwHUDcTQPazxYYk5jxErGeQqdvnYtyg5nBPbU"
+			]
+		},
+		"Tick.sol": {
+			"keccak256": "0x60752e079938508bfc274e2a3d2618ede09e153ba6f08cd3c476557947fbe2ac",
+			"license": "BUSL-1.1",
+			"urls": [
+				"bzz-raw://23e7045efd6c5c4c5b3d15898d639cc2c128ace49d2dab0b1ef2b868e6a43234",
+				"dweb:/ipfs/QmaoV6txuomfjSoeakDyZ73mPygEHCgrYarKQxQ5sp29hu"
+			]
+		},
+		"TickMath.sol": {
+			"keccak256": "0x1f864a2bf61ba05f3173eaf2e3f94c5e1da4bec0554757527b6d1ef1fe439e4e",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://5139b586df546a9d1c46804ca400b1cb9ce87236eaf212ebd64edee6747a172a",
+				"dweb:/ipfs/QmVa2kcRw3VyuB6j1EVWXACKnkbQZgfXYXNi5voq3XkYG8"
+			]
+		}
+	},
+	"version": 1
+}

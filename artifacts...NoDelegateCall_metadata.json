@@ -1,0 +1,52 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"stateVariables": {
+				"original": {
+					"details": "The original address of this contract"
+				}
+			},
+			"title": "Prevents delegatecall to a contract",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Base contract that provides a modifier for preventing delegatecall to methods in a child contract",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"NoDelegateCall.sol": "NoDelegateCall"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"NoDelegateCall.sol": {
+			"keccak256": "0xc12ceb98dc803a7d745d7e7c53175b4c5b7781dd26e6f5d233deecd8b0d0d1dc",
+			"license": "BUSL-1.1",
+			"urls": [
+				"bzz-raw://224378ae3c96adfb81f0c827e2a5a8b51e3bb51c6fc4a82e79f14720b42d719f",
+				"dweb:/ipfs/QmapcnEvVdCoLqp4CUYmg8tuc6ui1u6fg8gt7YoCVvgZyC"
+			]
+		}
+	},
+	"version": 1
+}

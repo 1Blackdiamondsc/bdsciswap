@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Positions store additional state for tracking fees owed to the position",
+			"kind": "dev",
+			"methods": {},
+			"title": "Position",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Positions represent an owner address' liquidity between a lower and upper tick boundary",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Position.sol": "Position"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"FixedPoint128.sol": {
+			"keccak256": "0x2d1f4f73ae0d8f0a210b8d30084659b57c56ac8f2f96011fca36f00a6d417178",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://2ba88933f16cd2df398e19c6ad227268f83c03081b70d243c97116d2ed9bc241",
+				"dweb:/ipfs/QmTUGxdh8snzEM9VrTSS47StCg9VVWvvLJtJeNnMTFY4xb"
+			]
+		},
+		"FullMath.sol": {
+			"keccak256": "0xe511530871deaef86692cea9adb6076d26d7b47fd4815ce51af52af981026057",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bc5a6ae776be3e7dcbd23d49ffbc9d792fed0ddf4b111ebb64b9bb2133ec263e",
+				"dweb:/ipfs/QmbAUtWqvipzEARQpFpkzYKBELy3qeW5WXnZxHFU84sxG7"
+			]
+		},
+		"LiquidityMath.sol": {
+			"keccak256": "0xd53041349718d5bce4a89e87cd911879d41ba42ba3fab0614e5e8b742f352b88",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://ea7529b99ab4fc1d3e6c5a31990fb688f0a2d6cc302c0419e0cf5a2d6c563781",
+				"dweb:/ipfs/QmVaphRSNpfChHZKzutQ9WprwCo2WE1euvThRfHcwsnHhj"
+			]
+		},
+		"Position.sol": {
+			"keccak256": "0x7fb1a35fcc8b2104f1899d98cd1ce49b5e3af1bdad9da28a5bcda1d4081465e9",
+			"license": "BUSL-1.1",
+			"urls": [
+				"bzz-raw://28f43918f6528913abe8586ea4607281b97cdce35f869ae86369487c6ee6eb6c",
+				"dweb:/ipfs/QmTgTRMZ5FQT2MCkgUmuhGbt39uyoiVwgXWNJbzoZqiC4f"
+			]
+		}
+	},
+	"version": 1
+}

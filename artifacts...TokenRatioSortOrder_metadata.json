@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TokenRatioSortOrder.sol": "TokenRatioSortOrder"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"TokenRatioSortOrder.sol": {
+			"keccak256": "0x370ebd82fb265a65ff76dce636c6f83d8373ec2cfa293f1b2aa6f35ddcc07421",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a27980a3ae94b400717acc4b1fd14001d976cfdf7fb20a264d7f22fe3d5d1ea2",
+				"dweb:/ipfs/QmcNjnENJgQS8E9ba9eYXa9fS7smNaJWCp9M8R1JEefBzF"
+			]
+		}
+	},
+	"version": 1
+}
