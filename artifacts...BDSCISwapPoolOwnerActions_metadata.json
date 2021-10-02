@@ -1,0 +1,125 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint128",
+						"name": "amount0Requested",
+						"type": "uint128"
+					},
+					{
+						"internalType": "uint128",
+						"name": "amount1Requested",
+						"type": "uint128"
+					}
+				],
+				"name": "collectProtocol",
+				"outputs": [
+					{
+						"internalType": "uint128",
+						"name": "amount0",
+						"type": "uint128"
+					},
+					{
+						"internalType": "uint128",
+						"name": "amount1",
+						"type": "uint128"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "feeProtocol0",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "feeProtocol1",
+						"type": "uint8"
+					}
+				],
+				"name": "setFeeProtocol",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"collectProtocol(address,uint128,uint128)": {
+					"params": {
+						"amount0Requested": "The maximum amount of token0 to send, can be 0 to collect fees in only token1",
+						"amount1Requested": "The maximum amount of token1 to send, can be 0 to collect fees in only token0",
+						"recipient": "The address to which collected protocol fees should be sent"
+					},
+					"returns": {
+						"amount0": "The protocol fee collected in token0",
+						"amount1": "The protocol fee collected in token1"
+					}
+				},
+				"setFeeProtocol(uint8,uint8)": {
+					"params": {
+						"feeProtocol0": "new protocol fee for token0 of the pool",
+						"feeProtocol1": "new protocol fee for token1 of the pool"
+					}
+				}
+			},
+			"title": "Permissioned pool actions",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"collectProtocol(address,uint128,uint128)": {
+					"notice": "Collect the protocol fee accrued to the pool"
+				},
+				"setFeeProtocol(uint8,uint8)": {
+					"notice": "Set the denominator of the protocol's % share of the fees"
+				}
+			},
+			"notice": "Contains pool methods that may only be called by the factory owner",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BDSCISwapPoolOwnerActions.sol": "BDSCISwapPoolOwnerActions"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BDSCISwapPoolOwnerActions.sol": {
+			"keccak256": "0x4d02bd9fe61340f24bd26d1f2955facdb1c7269c218b7eb06e88db0b80745d85",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://3419438c2de50071135afdcb04f95ec414a012848a29029c0680a7c084273c19",
+				"dweb:/ipfs/QmP1KQTtTK7mrktAVV62pPrsXXkVjBz9N7rXpuexLSdfoN"
+			]
+		}
+	},
+	"version": 1
+}

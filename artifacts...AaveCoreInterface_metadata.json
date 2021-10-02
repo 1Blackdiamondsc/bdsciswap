@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_reserve",
+						"type": "address"
+					}
+				],
+				"name": "getReserveATokenAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"AaveCoreInterface.sol": "AaveCoreInterface"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"AaveCoreInterface.sol": {
+			"keccak256": "0x9e02bc2aaa8adfcf3d0b5d8392497636838dbf97c97f7d53e89da4ae8d1362da",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://69a29e457ce19a9be4ddb9d689e4890df21717aa787e3592d53b3c073e8d537a",
+				"dweb:/ipfs/QmS55s9DQuWc62ZdkGJWN5MnyoHuZ7XvwWGw7WdyeiEgiW"
+			]
+		}
+	},
+	"version": 1
+}

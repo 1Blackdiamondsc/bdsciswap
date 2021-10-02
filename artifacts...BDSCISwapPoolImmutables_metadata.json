@@ -1,0 +1,178 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "factory",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fee",
+				"outputs": [
+					{
+						"internalType": "uint24",
+						"name": "",
+						"type": "uint24"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "maxLiquidityPerTick",
+				"outputs": [
+					{
+						"internalType": "uint128",
+						"name": "",
+						"type": "uint128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tickSpacing",
+				"outputs": [
+					{
+						"internalType": "int24",
+						"name": "",
+						"type": "int24"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token0",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token1",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"factory()": {
+					"returns": {
+						"_0": "The contract address"
+					}
+				},
+				"fee()": {
+					"returns": {
+						"_0": "The fee"
+					}
+				},
+				"maxLiquidityPerTick()": {
+					"details": "This parameter is enforced per tick to prevent liquidity from overflowing a uint128 at any point, and also prevents out-of-range liquidity from being used to prevent adding in-range liquidity to a pool",
+					"returns": {
+						"_0": "The max amount of liquidity per tick"
+					}
+				},
+				"tickSpacing()": {
+					"details": "Ticks can only be used at multiples of this value, minimum of 1 and always positive e.g.: a tickSpacing of 3 means ticks can be initialized every 3rd tick, i.e., ..., -6, -3, 0, 3, 6, ... This value is an int24 to avoid casting even though it is always positive.",
+					"returns": {
+						"_0": "The tick spacing"
+					}
+				},
+				"token0()": {
+					"returns": {
+						"_0": "The token contract address"
+					}
+				},
+				"token1()": {
+					"returns": {
+						"_0": "The token contract address"
+					}
+				}
+			},
+			"title": "Pool state that never changes",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"factory()": {
+					"notice": "The contract that deployed the pool, which must adhere to the IUniswapV3Factory interface"
+				},
+				"fee()": {
+					"notice": "The pool's fee in hundredths of a bip, i.e. 1e-6"
+				},
+				"maxLiquidityPerTick()": {
+					"notice": "The maximum amount of position liquidity that can use any tick in the range"
+				},
+				"tickSpacing()": {
+					"notice": "The pool tick spacing"
+				},
+				"token0()": {
+					"notice": "The first of the two tokens of the pool, sorted by address"
+				},
+				"token1()": {
+					"notice": "The second of the two tokens of the pool, sorted by address"
+				}
+			},
+			"notice": "These parameters are fixed for a pool forever, i.e., the methods will always return the same values",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"IBDSCISwapPoolImmutables.sol": "BDSCISwapPoolImmutables"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"IBDSCISwapPoolImmutables.sol": {
+			"keccak256": "0xdba37799cfaba3529fc7ef5a4f63667447269b9abb88b42686fbf171b9ec6dbf",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://f92d2277fbff47b4fb4c8f052de6f276b1b7d915d5e794643075ad4018d35a54",
+				"dweb:/ipfs/QmVCX46cWGATgdzTEkkmfnoPuQb5Gp7nnDRYtMymgTLz1a"
+			]
+		}
+	},
+	"version": 1
+}

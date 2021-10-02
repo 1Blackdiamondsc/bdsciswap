@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount0Owed",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount1Owed",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "BDSCISwapMintCallbackMintCallback",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"BDSCISwapMintCallbackMintCallback(uint256,uint256,bytes)": {
+					"details": "In the implementation you must pay the pool tokens owed for the minted liquidity. The caller of this method must be checked to be a UniswapV3Pool deployed by the canonical UniswapV3Factory.",
+					"params": {
+						"amount0Owed": "The amount of token0 due to the pool for the minted liquidity",
+						"amount1Owed": "The amount of token1 due to the pool for the minted liquidity",
+						"data": "Any data passed through by the caller via the IUniswapV3PoolActions#mint call"
+					}
+				}
+			},
+			"title": "Callback for IUniswapV3PoolActions#mint",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"BDSCISwapMintCallbackMintCallback(uint256,uint256,bytes)": {
+					"notice": "Called to `msg.sender` after minting liquidity to a position from IUniswapV3Pool#mint."
+				}
+			},
+			"notice": "Any contract that calls IUniswapV3PoolActions#mint must implement this interface",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BDSCISwapMintCallback.sol": "BDSCISwapMintCallback"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BDSCISwapMintCallback.sol": {
+			"keccak256": "0x6601f6f4968409e33eb1c6d9f9d53cdcd671c46d1c22b1db1807ad1c35c86558",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://37194dde32e7fe385e141619498fc8c79ae884f44850a06192d189db85c55e77",
+				"dweb:/ipfs/QmPC2AbFhGRMkQB3fPKsGuppUTZC7rXMPzthxEYV1RsNjn"
+			]
+		}
+	},
+	"version": 1
+}

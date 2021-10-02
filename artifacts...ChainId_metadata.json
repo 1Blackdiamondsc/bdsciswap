@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"title": "Function for getting the current chain ID",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ChainId.sol": "ChainId"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ChainId.sol": {
+			"keccak256": "0x19478399e251074e5c8835eccedca8d3c223479d025e75cd3730131c1f65bdac",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://21cf1f666bb74f1a4180324a4254918cf28d68236a1828140e7e6b21d4bfe857",
+				"dweb:/ipfs/QmcTVMseerQiMm2cS5gQ3SEx9kprpyMgWCbiD9VL2kKS2u"
+			]
+		}
+	},
+	"version": 1
+}
