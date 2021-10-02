@@ -1,0 +1,37 @@
+#This is an example webapp.io configuration for rails!
+FROM vm/rails:2.7.1
+
+# To note: Layerfiles create entire VMs, *not* containers!
+
+# Install postgresql and run it in the background
+RUN apt-get update && \
+    apt-get install postgresql postgresql-contrib libpq-dev
+
+RUN gem install pg
+
+ENV RAILS_ENV=development
+
+RUN sudo -u postgres createuser -s -i -d -r -l -w root
+RUN sudo -u postgres -H -- psql -t -c "CREATE DATABASE mydb;"
+RUN sudo -u postgres -H -- psql -c "ALTER ROLE root WITH PASSWORD 'password';"
+
+# Copy your rails app into the runner
+COPY . .
+
+# set up database
+RUN echo -e 'development:\n\
+  adapter: postgresql\n\
+  encoder: unicode\n\
+  database: mydb\n\
+  username: root\n\
+  password: password\n' > config/database.yml
+
+
+# run migrations
+RUN bundle install
+RUN bundle exec rake db:migrate
+RUN bundle exec rake db:setup
+
+# Start the server
+RUN BACKGROUND rails server --binding 0.0.0.0
+EXPOSE WEBSITE localhost:3000
