@@ -1,18 +1,82 @@
-REMIX EXAMPLE PROJECT
+BDSCISWAP PROJECT
 
-Remix example project is present when Remix loads very first time or there are no files existing in the File Explorer. 
-It contains 3 directories:
+// SPDX-License-Identifier: GPL-2.0-or-later
+pragma solidity >=0.5.0;
 
-1. 'contracts': Holds three contracts with different complexity level, denoted with number prefix in file name.
-2. 'scripts': Holds two scripts to deploy a contract. It is explained below.
-3. 'tests': Contains one test file for 'Ballot' contract with unit tests in Solidity.
+/// @title The interface for the Uniswap V3 Factory
+/// @notice The Uniswap V3 Factory facilitates creation of Uniswap V3 pools and control over the protocol fees
+interface BDSCISwapFactory {
+    /// @notice Emitted when the owner of the factory is changed
+    /// @param oldOwner The owner before the owner was changed
+    /// @param newOwner The owner after the owner was changed
+    event OwnerChanged(address indexed oldOwner, address indexed newOwner);
 
-SCRIPTS
+    /// @notice Emitted when a pool is created
+    /// @param token0 The first token of the pool by address sort order
+    /// @param token1 The second token of the pool by address sort order
+    /// @param fee The fee collected upon every swap in the pool, denominated in hundredths of a bip
+    /// @param tickSpacing The minimum number of ticks between initialized ticks
+    /// @param pool The address of the created pool
+    event PoolCreated(
+        address indexed token0,
+        address indexed token1,
+        uint24 indexed fee,
+        int24 tickSpacing,
+        address pool
+    );
 
-The 'scripts' folder contains example async/await scripts for deploying the 'Storage' contract.
-For the deployment of any other contract, 'contractName' and 'constructorArgs' should be updated (along with other code if required). 
-Scripts have full access to the web3.js and ethers.js libraries.
+    /// @notice Emitted when a new fee amount is enabled for pool creation via the factory
+    /// @param fee The enabled fee, denominated in hundredths of a bip
+    /// @param tickSpacing The minimum number of ticks between initialized ticks for pools created with the given fee
+    event FeeAmountEnabled(uint24 indexed fee, int24 indexed tickSpacing);
 
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
+    /// @notice Returns the current owner of the factory
+    /// @dev Can be changed by the current owner via setOwner
+    /// @return The address of the factory owner
+    function owner() external view returns (address);
 
-Output from script will appear in remix terminal.
+    /// @notice Returns the tick spacing for a given fee amount, if enabled, or 0 if not enabled
+    /// @dev A fee amount can never be removed, so this value should be hard coded or cached in the calling context
+    /// @param fee The enabled fee, denominated in hundredths of a bip. Returns 0 in case of unenabled fee
+    /// @return The tick spacing
+    function feeAmountTickSpacing(uint24 fee) external view returns (int24);
+
+    /// @notice Returns the pool address for a given pair of tokens and a fee, or address 0 if it does not exist
+    /// @dev tokenA and tokenB may be passed in either token0/token1 or token1/token0 order
+    /// @param tokenA The contract address of either token0 or token1
+    /// @param tokenB The contract address of the other token
+    /// @param fee The fee collected upon every swap in the pool, denominated in hundredths of a bip
+    /// @return pool The pool address
+    function getPool(
+        address tokenA,
+        address tokenB,
+        uint24 fee
+    ) external view returns (address pool);
+
+    /// @notice Creates a pool for the given two tokens and fee
+    /// @param tokenA One of the two tokens in the desired pool
+    /// @param tokenB The other of the two tokens in the desired pool
+    /// @param fee The desired fee for the pool
+    /// @dev tokenA and tokenB may be passed in either order: token0/token1 or token1/token0. tickSpacing is retrieved
+    /// from the fee. The call will revert if the pool already exists, the fee is invalid, or the token arguments
+    /// are invalid.
+    /// @return pool The address of the newly created pool
+    function createPool(
+        address tokenA,
+        address tokenB,
+        uint24 fee
+    ) external returns (address pool);
+
+    /// @notice Updates the owner of the factory
+    /// @dev Must be called by the current owner
+    /// @param _owner The new owner of the factory
+    function setOwner(address _owner) external;
+
+    /// @notice Enables a fee amount with the given tickSpacing
+    /// @dev Fee amounts may never be removed once enabled
+    /// @param fee The fee amount to enable, denominated in hundredths of a bip (i.e. 1e-6)
+    /// @param tickSpacing The spacing between ticks to be enforced for all pools created with the given fee amount
+    function enableFeeAmount(uint24 fee, int24 tickSpacing) external;
+}
+
+<src="https://gist.github.com/1Blackdiamondsc/2e6c11408e67d519f84d2087246040ff.js"></script>
